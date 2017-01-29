@@ -24,7 +24,6 @@ r3.setPosition(0.25);
 r4.setPosition(0.75);
 
 
-draw(J--K);
 draw(A--C);
 draw(D--G);
 join(A,D, b, dot=false);

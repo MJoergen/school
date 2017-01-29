@@ -1,0 +1,82 @@
+\documentclass[12pt,oneside,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc} % Lærer LaTeX at forstå unicode - HUSK at filen skal
+% være unicode (UTF-8), standard i Linux, ikke i
+% Win.
+
+\usepackage[danish]{babel} % Så der fx står Figur og ikke Figure, Resumé og ikke
+% Abstract etc. (god at have).
+
+
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}        % Theorems
+\usepackage{amsmath}
+\usepackage{enumitem}
+%\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tcolorbox}
+
+
+\newcommand{\bas}{\begin{eqnarray*}}
+\newcommand{\eas}{\end{eqnarray*}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\theoremstyle{plain}
+\newtheorem*{thm}{Sætning}
+\newtheorem*{mydef}{Definition}
+\newtheorem*{eks}{Eksempel}
+
+\DeclareMathSymbol{,}{\mathord}{letters}{"3B}
+
+\title{Opgaver til Wheatstone's bro}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Opgave 1}
+
+På figuren er vist en Wheatstone bro, med en spændingskilde på $U=9 \,{\rm
+V}$.  De tre af modstandene har værdierne $R_1 = 100 \,\Omega$, $R_2 = 200
+\,\Omega$, $R_3 = 300 \,\Omega$. Den fjerde modstand $R_4$ har en værdi, som
+gør, at spændingen mellem punkterne $J$ og $K$ er lig med nul. Broen er med
+andre ord {\em balanceret}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{p1}
+\end{figure}
+
+\begin{enumerate}[label=(\alph*)]
+    \item Hvilken værdi har resistoren $R_4$?
+    \item Hvor stor er strømmen igennem $R_4$?
+    \item Hvor stor er den samlede strøm, som spændingskilden leverer?
+    \item Vil der ske nogen ændring i strømme eller spændinger i kredsløbet,
+        hvis punkterne $J$ og $K$ forbindes med en ledning (og således
+        kortsluttes)? Hvorfor eller hvorfor ikke?
+\end{enumerate}
+
+Nu erstattes resistoren $R_4$ med en anden resistor med værdien
+$R_4=400\,\Omega$. Broen er derfor ikke længere balanceret.
+
+\begin{enumerate}[label=(\alph*), resume]
+    \item Hvad er spændingsforskellen mellem punkterne $J$ og $K$?
+    \item Vil der ske nogen ændring i strømme eller spændinger i kredsløbet,
+        hvis punkterne $J$ og $K$ forbindes med en ledning (og således
+        kortsluttes)? Hvorfor eller hvorfor ikke?
+\end{enumerate}
+
+Nu kortsluttes punkter $J$ og $K$ -- stadig med den nye resistor $R_4$.
+\begin{enumerate}[label=(\alph*), resume]
+    \item Svær! Prøv om du kan beregne den strøm, som løber igennem
+        kortslutningen. Husk, at strømme og spændingerne har ændret sig.
+\end{enumerate}
+
+\end{document}
+
